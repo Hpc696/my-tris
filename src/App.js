@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Bottone(){
+  return(
+    <button>Ciao</button>
+  )
+}
 function App() {
+  const pippo= Bottone();
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +23,12 @@ function App() {
         >
           Learn React
         </a>
+        {pippo}
       </header>
     </div>
   );
 }
 
 export default App;
+export {Bottone};
+
